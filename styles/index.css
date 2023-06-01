@@ -6,6 +6,26 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 24px;
+  padding: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+  padding: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 140, 255);
+  border-radius: 15px;
+  border: 7px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: blue;
+}
+
 .navbar-wrapper {
   position: fixed;
   width: 100%;
@@ -16,6 +36,9 @@ body {
   padding: 0 1%;
   background: #fff;
   z-index: 10;
+  right: 0px;
+  left: 0px;
+  top: 0px;
 }
 
 .navbar-wrapper > div:first-child img {
@@ -31,7 +54,7 @@ body {
 
 .navbar-wrapper > div:nth-child(2) a {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   color: #4a4a4a;
 }
@@ -56,7 +79,7 @@ body {
   cursor: pointer;
   border-radius: 9px;
   box-shadow: 0px 0px 3px #00000029;
-  font: normal normal 600 14px/19px Segoe UI;
+  font: normal normal 500 14px/19px Segoe UI;
 }
 
 .navbar-wrapper > div:nth-child(4) {
@@ -72,7 +95,7 @@ body {
 
 /* ------------------BANNER STYLING--------------------- */
 
-.banner > div {
+/* .banner > div {
   position: relative;
   top: 422px;
   left: -160px;
@@ -88,6 +111,372 @@ body {
   background: #468fec 0% 0% no-repeat padding-box;
   opacity: 1;
   border-radius: 50px;
+} */
+
+.section-1 {
+  position: relative;
+  height: 832px;
+  background: #f9fcff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.desc-image-wrapper {
+  position: relative;
+  display: flex;
+  top: 54px;
+  display: flex;
+  padding-left: 10%;
+  border: 1px solid blue !important;
+}
+
+.desc-wrapper {
+  width: 50%;
+}
+
+.desc-wrapper > .desc-heading {
+  text-align: left;
+  position: absolute;
+  top: 208px;
+  display: block;
+  font: normal normal bold 38px/44px Segoe UI;
+  letter-spacing: 1.14px;
+  color: #363636;
+  opacity: 1;
+}
+
+.desc-wrapper > .desc-heading > span,
+.desc-text > span {
+  display: block;
+}
+
+.desc-wrapper > .desc-text {
+  text-align: left;
+  position: absolute;
+  top: 330px;
+  font: normal normal 400 24px/32px Segoe UI;
+  letter-spacing: 1.2px;
+  color: #5d5d6e;
+  opacity: 1;
+}
+
+.button-wrapper {
+  position: absolute;
+  top: 526px;
+  display: flex;
+  column-gap: 16px;
+}
+
+.button-wrapper > button:nth-child(1) {
+  width: 158px;
+  height: 49px;
+  border: none;
+  background: #ffa200 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  text-align: center;
+  font: normal normal 500 15px/20px Segoe UI;
+  letter-spacing: 0.54px;
+  color: #ffffff;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.button-wrapper > button:nth-child(2) {
+  width: 158px;
+  height: 49px;
+  background: transparent;
+  border: 2px solid #ffa200;
+  /* color: #ffa200; */
+  text-align: center;
+  font: normal normal 500 15px/20px Segoe UI;
+  letter-spacing: 0.54px;
+  color: #ffa200;
+  border-radius: 8px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.sec1-image-wrapper {
+  width: 50%;
+}
+
+.sec1-image-wrapper img {
+  display: block;
+  border-radius: 50%;
+}
+
+.sec1-image-wrapper img:nth-child(1) {
+  position: absolute;
+  top: 118px;
+  left: 855px;
+  width: 141px;
+  height: 140px;
+}
+.sec1-image-wrapper img:nth-child(2) {
+  position: absolute;
+  top: 132px;
+  left: 1215px;
+  width: 113px;
+  height: 113px;
+}
+.sec1-image-wrapper img:nth-child(3) {
+  position: absolute;
+  top: 291px;
+  left: 694px;
+  width: 161px;
+  height: 162px;
+}
+.sec1-image-wrapper img:nth-child(4) {
+  position: absolute;
+  top: 414px;
+  left: 903px;
+  top: 205px;
+  left: 1033px;
+  width: 204px;
+  height: 204px;
+}
+.sec1-image-wrapper img:nth-child(5) {
+  position: absolute;
+  top: 414px;
+  left: 903px;
+  width: 113px;
+  height: 112px;
+}
+.sec1-image-wrapper img:nth-child(6) {
+  position: absolute;
+  top: 492px;
+  left: 1076px;
+  width: 220px;
+  height: 220px;
+}
+/* ------------------SECTION 2 STYLING--------------------- */
+
+.section2 {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  flex-direction: row;
+}
+
+.leftSection2 {
+  width: 40%;
+  /* border:1px solid green; */
+  height: 100%;
+  padding-left: 10%;
+}
+
+.upperLeftSection02 {
+  width: 100%;
+  height: auto;
+
+  justify-content: center;
+
+  border-left: 5px solid #4aa0fc;
+  padding-left: 5px;
+  text-align: center;
+}
+
+.innterSmallerTextLeftSection2 {
+  text-align: left;
+  font: normal normal 600 15px/43px Segoe UI;
+
+  letter-spacing: 0.45px;
+  color: #4aa0fc;
+  text-transform: uppercase;
+  padding-left: 4px;
+}
+
+.smallTextLeftSection2 {
+  text-align: left;
+  font: normal normal 600 15px/43px Segoe UI;
+  letter-spacing: 0.45px;
+  color: black;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.mdTextLeftSection2 {
+  text-align: left;
+  font: normal normal 600 32px/38px Segoe UI;
+  letter-spacing: 0.96px;
+  color: #363636;
+  opacity: 1;
+  margin: 0;
+  margin-top: 0;
+}
+
+.lowerLeftSection02 {
+  text-align: left;
+  font: normal normal normal 24px/35px Segoe UI;
+  letter-spacing: 1.49px;
+  color: #5d5d6e;
+  opacity: 1;
+}
+
+.rightSection {
+  width: 40%;
+  height: 100%;
+  /* border-radius: 50%; */
+  position: relative;
+}
+
+.mechEng {
+  width: 480px;
+  height: 480px;
+  /* UI Properties */
+  background: transparent
+    url("img/mechanical-engineer-technician-car-inspecting-769ahdnuovbgb7yf.png")
+    0% 0% no-repeat padding-box;
+  border: 55px solid #f7f7f7;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: -132px;
+  top: 0px;
+  z-index: 4;
+}
+.carBox {
+  width: 593px;
+  height: 157px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 8px #00000029;
+  border-radius: 14px;
+  opacity: 1;
+  z-index: 5;
+  position: absolute;
+  top: 467px;
+  left: -101px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+}
+.car1,
+.car2,
+.car3 {
+  border-right: 2px solid #d2cece;
+
+  width: 25%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font: normal normal normal 22px/24px Bahnschrift;
+  letter-spacing: 1.36px;
+  color: #3f3f3f;
+}
+.car4 {
+  width: 25%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font: normal normal normal 22px/24px Bahnschrift;
+  letter-spacing: 1.36px;
+  color: #3f3f3f;
+}
+.car1Pic {
+  height: 30px;
+  width: 36px;
+  margin: 0;
+}
+.vehicleText {
+  font: normal normal normal 12px/23px Segoe UI;
+  letter-spacing: 0.74px;
+  color: #5d5d6e;
+  opacity: 1;
+  margin: 0;
+}
+
+/* ------------------SECTION 3 STYLING--------------------- */
+
+.section-3 {
+  padding: 56px 0;
+  background: #fdfbf9 0% 0% no-repeat padding-box;
+  position: relative;
+}
+
+.sec3-heading {
+  width: 30%;
+  margin: 18px auto 96px;
+  border-bottom: 4px solid #4aa0fc;
+  text-align: center;
+}
+
+.sec3-heading p {
+  text-align: center;
+  font: normal normal 600 26px/34px Segoe UI;
+  letter-spacing: 0.78px;
+  color: #363636;
+}
+
+.cards-wrapper {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+.cards-wrapper > div {
+  position: relative;
+  width: 30%;
+  height: 462px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 14px #00000021;
+  border-radius: 21px;
+}
+
+.cards-wrapper > div > div {
+  top: -50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background-color: #ffa200;
+}
+
+.cards-wrapper > div > div > p {
+  position: relative;
+  text-align: center;
+  font: normal normal 500 25px/35px Segoe UI;
+  letter-spacing: 0.75px;
+  color: #ffffff;
+}
+
+.cards-wrapper > div > p {
+  width: 84%;
+  margin: auto;
+}
+
+.cards-wrapper > div > p:nth-child(2) {
+  text-align: center;
+  font: normal normal 600 19px/34px Segoe UI;
+  letter-spacing: 0.57px;
+  color: #363636;
+}
+
+.cards-wrapper > div > p:nth-child(3) {
+  text-align: center;
+  font: normal normal 400 16px/26px Segoe UI;
+  letter-spacing: 0.58px;
+  color: #5d5d6e;
+}
+.cards-wrapper > div > img {
+  display: block;
+  width: 16%;
+  margin: auto;
+  color: #ffc500;
 }
 
 /* ------------------SECTION 4 STYLING--------------------- */
@@ -100,13 +489,12 @@ body {
   color: #fff;
   padding-top: 80px;
   padding-bottom: 60px;
+  position: relative;
 }
 
 .section-4 > p:nth-child(1) {
   text-align: center;
-  /* font: normal normal bold 27px/54px Segoe UI; */
-  font-size: 27px;
-  font-weight: bold;
+  font: normal normal bold 27px/54px Segoe UI;
   margin-bottom: 20px;
   letter-spacing: 1.08px;
 }
@@ -141,21 +529,28 @@ body {
 
 /* ------------------SECTION 5 STYLING--------------------- */
 
+.section-5 {
+  position: relative;
+}
+
 .section-5 > div:nth-child(1) {
   display: flex;
   padding: 0;
   width: 40%;
-  margin: auto;
+
+  display: flex;
+  margin: 97px auto 24px;
   justify-content: center;
-  margin-top: 97px;
 }
+
 .section-5 > div:nth-child(1) p {
   text-align: center;
   padding: 0;
   margin: 0;
-  font: normal normal 600 22px/34px Segoe UI;
+  font: normal normal 500 22px/34px Segoe UI;
   letter-spacing: 0.66px;
   color: #363636;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -194,9 +589,332 @@ body {
 
 .image-wrapper p {
   color: #3f3f3f;
-  font: normal normal medium 17px/27px Segoe UI;
+  font: normal normal 500 17px/27px Segoe UI;
   letter-spacing: 0.51px;
   text-align: center;
+}
+
+/* ------------------SECTION 6 STYLING--------------------- */
+.section-6 > .investor-wrapper {
+  height: 347px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 60px;
+
+  background: #f8f8f8 0% 0% no-repeat padding-box;
+  /* background: red 0% 0% no-repeat padding-box; */
+}
+
+.investor-heading {
+  text-align: center;
+  font: normal normal bold 22px/0px Segoe UI;
+  letter-spacing: 0.66px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.investor-heading > span:nth-child(1) {
+  margin: auto;
+  color: #363636;
+}
+
+.investor-heading > span:nth-child(2) {
+  color: #4aa0fc;
+}
+
+.investor-images {
+  width: 80%;
+  margin: 20px auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* column-gap: 8%; */
+}
+
+.investor-images img {
+  display: block;
+  width: 20%;
+  margin: 0;
+}
+
+/* ------------------SECTION 6 STYLING // SUKHBIR--------------------- */
+
+.investor-images > div {
+  display: flex;
+  align-items: center;
+}
+.investor-images > div span {
+  display: block;
+  text-align: left;
+  font: normal normal 500 29px/35px Segoe UI;
+  letter-spacing: 0.87px;
+  color: #363636;
+  margin-left: 12px;
+}
+
+.investor-images > div > img {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+}
+
+/* ------------------SECTION 6 STYLING ENDS // SUKHBIR--------------------- */
+
+/* ------------------SECTION 7 STYLING--------------------- */
+.section-7 > .mentor-wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+
+.mentor-heading {
+  text-align: center;
+  font: normal normal bold 22px/0px Segoe UI;
+  letter-spacing: 0.66px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mentor-heading > span:nth-child(1) {
+  margin: auto;
+  color: #363636;
+}
+
+.mentor-heading > span:nth-child(2) {
+  letter-spacing: 0.66px;
+  color: #4aa0fc;
+}
+
+.mentor-images {
+  width: 50%;
+  margin: auto;
+  margin: 100px auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /* column-gap: 8%; */
+}
+
+.mentor-images img {
+  display: block;
+  width: 40%;
+  margin: 0;
+}
+
+/* ------------------FOOTER WEB STYLING--------------------- */
+
+.footer-web {
+  background-color: #003152;
+  padding: 50px 10%;
+}
+
+.location-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-mails-wrapper {
+  width: 64%;
+}
+
+.location-wrapper {
+  display: flex;
+  color: #fff;
+  padding-bottom: 40px;
+  order: 1;
+}
+
+.location-wrapper > div {
+  width: 33%;
+}
+
+.location-wrapper .country {
+  text-align: left;
+  font: normal normal 600 30px/20px Segoe UI;
+  letter-spacing: 1.08px;
+}
+
+.location-wrapper > div > .country:nth-child(1),
+.country:nth-child(2) {
+  margin-bottom: 38px;
+}
+.location-wrapper > div:last-child > p:nth-child(1) {
+  margin-bottom: 4px;
+}
+
+.location-wrapper > div:last-child > p:nth-child(2) {
+  text-align: left;
+  margin-top: 4px;
+  font: normal normal 400 12px/22px Segoe UI;
+  letter-spacing: 0.43px;
+  color: #d2d2d2;
+}
+
+.location-wrapper span {
+  display: block;
+  font: normal normal 500 12px/20px Segoe UI;
+  letter-spacing: 0.43px;
+}
+
+.mails-wrapper {
+  padding-top: 36px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.mails-wrapper > div > p {
+  text-align: left;
+  font: normal normal 400 11px/22px Segoe UI;
+  letter-spacing: 0.4px;
+  color: #d2d2d2;
+}
+
+.mails-wrapper > div > div {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font: normal normal 400 13px/22px Segoe UI;
+  letter-spacing: 0.47px;
+  color: #ffffff;
+}
+
+.mails-wrapper > div > div > img {
+  width: 10%;
+  display: block;
+  margin-right: 8px;
+}
+
+.mails-wrapper > div > div > span {
+  text-align: left;
+  font: normal normal 400 13px/22px Segoe UI;
+  letter-spacing: 0.47px;
+  color: #ffffff;
+}
+
+/* ------------Form Styling----------- */
+
+.form-wrapper {
+  width: 34%;
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 38px 22px 25px 22px;
+  order: 2;
+}
+
+.form-wrapper > div > form > input[type="submit"] {
+  display: block;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font: normal normal 500 14px/22px Segoe UI;
+  letter-spacing: 0.44px;
+  color: #ffffff;
+  height: 34px;
+  background-color: #ff8e2b;
+  border-radius: 6px;
+}
+
+.form-wrapper > div > form > label {
+  display: block;
+  text-align: left;
+  font: normal normal 500 12px/22px Segoe UI;
+  margin-bottom: 4px;
+  letter-spacing: 0.43px;
+  color: #003152;
+}
+
+.form-wrapper > div > form > input[type="email"] {
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 4%;
+  border: 1px solid #707070;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+textarea {
+  display: block;
+  margin-bottom: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4%;
+  font-family: "Segoe UI", sans-serif;
+  border: 1px solid #707070;
+  border-radius: 6px;
+  resize: none;
+  overflow: auto;
+}
+
+/* --------------pages-socials-wrapper------------------- */
+
+.pages-socials-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -----------------PAGES WRAPPER STYLING---------------- */
+
+.pages-wrapper {
+  display: flex;
+  width: 64%;
+  justify-content: space-between;
+  list-style-type: none;
+  text-align: left;
+  letter-spacing: 0.72px;
+}
+
+.pages-wrapper li > a {
+  font: normal normal 500 20px/22px Segoe UI;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ---------------SOCIALS WRAPPER STYLING----------------- */
+
+.socials-wrapper {
+  width: 34%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.socials {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  width: 48%;
+}
+
+.socials img {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.google-play {
+  padding: 0;
+  margin: 0;
+  width: 48%;
+}
+
+.google-play img {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
 }
 
 /* ****************MEDIA QUERIES****************** */
@@ -216,7 +934,204 @@ body {
   }
 }
 
-/* -------------------BANNER---------------------- */
+/* -------------------SECTION 1---------------------- */
+
+@media all and (max-width: 768px) {
+  .desc-image-wrapper {
+    flex-direction: column;
+  }
+
+  .desc-wrapper > .desc-heading {
+    top: 74px;
+    left: 33px;
+    width: 277px;
+    height: 41px;
+    text-align: left;
+    font: normal normal bold 20px/20px Segoe UI;
+    letter-spacing: 0.6px;
+    color: #363636;
+    opacity: 1;
+  }
+
+  .desc-wrapper > .desc-text {
+    top: 138px;
+    left: 33px;
+    width: 275px;
+    height: 143px;
+    text-align: left;
+    font: normal normal normal 12px/22px Segoe UI;
+    letter-spacing: 0.65px;
+    color: #5d5d6e;
+    opacity: 1;
+  }
+
+  .button-wrapper {
+    top: 283px;
+    left: 33px;
+  }
+
+  .button-wrapper > button:nth-child(1) {
+    width: 108px;
+    height: 34px;
+  }
+
+  .button-wrapper > button:nth-child(2) {
+    width: 108px;
+    height: 34px;
+  }
+
+  .sec1-image-wrapper img {
+    display: block;
+    border-radius: 50%;
+  }
+
+  .sec1-image-wrapper img:nth-child(1) {
+    top: 393px;
+    left: 109px;
+    width: 75px;
+    height: 74px;
+  }
+  .sec1-image-wrapper img:nth-child(2) {
+    top: 401px;
+    left: 257px;
+    width: 60px;
+    height: 60px;
+  }
+  .sec1-image-wrapper img:nth-child(3) {
+    top: 485px;
+    left: 23px;
+    width: 85px;
+    height: 86px;
+  }
+  .sec1-image-wrapper img:nth-child(4) {
+    top: 439px;
+    left: 173px;
+    width: 108px;
+    height: 108px;
+  }
+  .sec1-image-wrapper img:nth-child(5) {
+    top: 550px;
+    left: 134px;
+    width: 60px;
+    height: 59px;
+  }
+  .sec1-image-wrapper img:nth-child(6) {
+    top: 591px;
+    left: 185px;
+    width: 116px;
+    height: 116px;
+  }
+}
+
+/* -------------------SECTION 2---------------------- */
+
+@media all and (max-width: 768px) {
+  .section2 {
+    height: auto;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .leftSection2 {
+    width: 272px;
+    /* border:1px solid green; */
+    height: auto;
+    padding-left: 10%;
+  }
+
+  .smallTextLeftSection2 {
+    font: normal normal 600 16px/19px Segoe UI;
+  }
+
+  .mdTextLeftSection2 {
+    font: normal normal 600 16px/19px Segoe UI;
+    letter-spacing: 0.48px;
+  }
+
+  .lowerLeftSection02 {
+    font: normal normal 400 13px/22px Segoe UI;
+    letter-spacing: 0.81px;
+  }
+
+  .rightSection {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 296px;
+  }
+  .mechEng {
+    width: 270px;
+    height: 270px;
+    /* UI Properties */
+    background: transparent
+      url("img/mechanical-engineer-technician-car-inspecting-769ahdnuovbgb7yf.png")
+      0% 0% no-repeat padding-box;
+    border: 25px solid #f7f7f7;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: 0;
+    /* left: -10px; */
+    top: 0px;
+    z-index: 4;
+  }
+
+  .carBox {
+    width: 298px;
+    height: 79px;
+    /* UI Properties */
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 8px #00000029;
+    border-radius: 8px;
+    opacity: 1;
+    top: 233px;
+    left: -1px;
+  }
+
+  .car1,
+  .car2,
+  .car3,
+  .car4 {
+    font: normal normal normal 12px/12px Segoe UI;
+  }
+
+  .car1Pic {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* -------------------SECTION 3---------------------- */
+
+@media all and (max-width: 768px) {
+  .cards-wrapper {
+    flex-direction: column;
+    margin: auto;
+    row-gap: 56px;
+  }
+
+  .sec3-heading {
+    width: 90%;
+    margin: 18px auto 96px;
+    border-bottom: 3px solid #4aa0fc;
+  }
+
+  .sec3-heading p {
+    font: normal normal 600 18px/24px Segoe UI;
+  }
+
+  .cards-wrapper > div {
+    width: 100%;
+  }
+
+  .cards-wrapper > div > div {
+    top: -30px;
+    width: 56px;
+    height: 56px;
+  }
+}
 
 /* -------------------SECTION 4---------------------- */
 
@@ -224,6 +1139,13 @@ body {
   .section-4 > p:nth-child(1) {
     font: normal normal bold 16px/32px Segoe UI;
     font-size: 16px;
+  }
+
+  .section-4 > p:nth-child(1) {
+    font: normal normal bold 16px/24px Segoe UI;
+
+    width: 90%;
+    margin: 0 auto 24px;
   }
 
   .section-4 > p:nth-child(2) {
@@ -244,5 +1166,116 @@ body {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+  }
+
+  .section-5 > div:nth-child(1) {
+    flex-direction: column;
+    width: 90%;
+    margin: 67px auto 34px;
+  }
+
+  .section-5 > div:nth-child(1) p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font: normal normal 500 16px/24px Segoe UI;
+    letter-spacing: 0.66px;
+    color: #363636;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+/* -------------------SECTION 6---------------------- */
+@media all and (max-width: 768px) {
+  .section-6 > .investor-wrapper {
+    height: fit-content;
+    padding: 24px 0;
+    /* box-sizing: content-box; */
+  }
+
+  .investor-images {
+    flex-direction: column;
+    width: 60%;
+    margin: 16px auto;
+    row-gap: 16px;
+    justify-content: space-between;
+  }
+
+  .investor-images img {
+    width: 100%;
+  }
+
+  /* ------------------SECTION 6 STYLING // SUKHBIR--------------------- */
+  .investor-images > div {
+    margin-top: 16px;
+  }
+
+  .investor-images > div > img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+
+  .investor-images > div span {
+    display: block;
+    text-align: left;
+    font: normal normal 600 16px/20px Segoe UI;
+    letter-spacing: 0.87px;
+    color: #363636;
+    margin-left: 12px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .location-form-wrapper {
+    flex-direction: column;
+  }
+
+  .location-wrapper {
+    order: 2;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .location-wrapper > div {
+    width: 100%;
+  }
+
+  .form-wrapper {
+    order: 1;
+    width: 100%;
+  }
+
+  .mails-wrapper {
+    flex-direction: column;
+
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .mails-wrapper > div {
+    width: 100%;
+  }
+
+  .pages-wrapper {
+    flex-direction: column;
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .pages-wrapper li > a {
+    font: normal normal 500 16px/22px Segoe UI;
+  }
+
+  .pages-socials-wrapper {
+    flex-direction: column;
+  }
+
+  .socials-wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
   }
 }
